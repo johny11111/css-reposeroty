@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.border{
+    border-bottom: 2px solid black;
+    padding-bottom: 12px;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hader {
+    background-image: url(../images/vista.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 389px;
+    color: white;
+    margin-bottom: 12px;
+
+}
+
+.hader h2 {
+    margin-bottom: 22px;
+    font-size: 35px;
+}
+
+#nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    height: 100px;
+}
+
+.head {
+    margin: 50px;
+}
+
+#colorAL {
+    color: rgb(242, 90, 14);
+}
+
+a {
+    font-size: 18px;
+    padding: 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+#login {
+    padding: 5px 22px;
+    border: 1px solid white;
+    border-radius: 40px;
+    text-align: center;
+}
+
+#abut {
+    padding: 5px 22px;
+    text-align: center;
+    border-radius: 40px;
+    background: white;
+    color: black;
+}
+
+.maicon {
+    display: flex;
+
+}
+
+#main {
+    width: 100%;
+
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 33px;
+    width: 80%;
+    padding: 30px;
+
+}
+
+.grid {
+    margin-top: 10px;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 400px;
+    height: 300px;
+    border: 1px solid white;
+    box-shadow: 0px 5px 14px 14px #DEDEDE;
+    border-radius: 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid::before {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 20px;
+    width: 150px;
+    transform: rotate(-45deg);
+    height: 40px;
+    background-color: #262626;
+    z-index: 1;
+}
+
+
+
+button {
+    background: #FFAE44;
+    border: 1px solid #FFAE44;
+    padding: 3px 10px;
+    min-height: 43px;
+    max-height: 43px;
+    border-radius: 40px;
+    font-size: 22px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    height: 50px;
+    width: 100%;
+    color: white;
+    background: rgb(62, 60, 60);
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    #gameLogo {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width:600px) {
+    #links {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #main {
+        height: 100%;
+    }
+}
+
+
+/* for login  */
+.input {
+    text-align: start;
+    gap: 12px;
+}
+
+input {
+    border-left: 2px solid #212121;
+    border-top: 2px solid #212121;
+    border-right: 2px solid #767676;
+    border-bottom: 2px solid #767676;
+    border-radius: 10px;
+    margin-top: 12px;
+    width: 445px;
+    height: 30px;
+}
+
+form {
+    text-align: start;
+
+    gap: 22px;
+}
+
+.form {
+    padding: 40px 150px 40px 150px;
+}
+
+#a>a {
+    text-decoration: none;
+    color: black;
+}
+
+#btnLI {
+    padding: 0 25px;
+    font-weight: 600;
+    margin-top: 24px;
+    font-size: 17px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+#mainL{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 5px 14px 14px #d5cccc;
+    max-width: 650px;
+    width: 100%;
+    margin: 2.5em;
+    font-size: 18px;
+}
