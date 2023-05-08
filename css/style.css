@@ -6,7 +6,7 @@
 
 }
 .border{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(245, 244, 244);
     padding-bottom: 12px;
 }
 
@@ -210,6 +210,11 @@ form {
     font-weight: 600;
     margin-top: 24px;
     font-size: 17px;
+}
+#btnLI:hover {
+    background:white;
+    color: black;
+    border: 1px solid #FFAE44;
 }
 
 h1 {
