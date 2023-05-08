@@ -97,7 +97,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     gap: 33px;
-    width: 80%;
+    max-width:900px;
     padding: 30px;
 
 }
