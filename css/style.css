@@ -106,6 +106,8 @@ a {
     margin-top: 10px;
     padding: 12px;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 400px;
@@ -127,6 +129,19 @@ a {
     height: 40px;
     background-color: #262626;
     z-index: 1;
+}
+#div_img{
+    width: auto;
+}
+.btn{
+    background: #FFAE44;
+    border: 1px solid #FFAE44;
+    padding: 3px 10px;
+    min-height: 43px;
+    max-height: 43px;
+    border-radius: 40px;
+    font-size: 22px;
+    color: black;
 }
 
 
