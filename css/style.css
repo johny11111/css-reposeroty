@@ -5,7 +5,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
-.border{
+
+.border {
     border-bottom: 2px solid rgb(245, 244, 244);
     padding-bottom: 12px;
 }
@@ -97,7 +98,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     gap: 33px;
-    max-width:900px;
+    max-width: 900px;
     padding: 30px;
 
 }
@@ -130,10 +131,12 @@ a {
     background-color: #262626;
     z-index: 1;
 }
-#div_img{
+
+#div_img {
     width: auto;
 }
-.btn{
+
+.btn {
     background: #FFAE44;
     border: 1px solid #FFAE44;
     padding: 3px 10px;
@@ -189,6 +192,18 @@ button {
 
 
 /* for login  */
+
+#headerLogin {
+    background-image: url(../images/pexels-mohan-reddy-8710595\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 389px;
+    color: white;
+    margin-bottom: 12px;
+}
+
 .input {
     text-align: start;
     gap: 12px;
@@ -226,8 +241,9 @@ form {
     margin-top: 24px;
     font-size: 17px;
 }
+
 #btnLI:hover {
-    background:white;
+    background: white;
     color: black;
     border: 1px solid #FFAE44;
 }
@@ -236,7 +252,8 @@ h1 {
     font-size: 30px;
     font-weight: 700;
 }
-#mainL{
+
+#mainL {
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -244,7 +261,8 @@ h1 {
     flex-direction: column;
 
 }
-#card{
+
+#card {
     display: flex;
     align-items: center;
     justify-content: center;
