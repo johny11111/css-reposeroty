@@ -3,15 +3,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    
 }
 
 .border {
     border-bottom: 2px solid rgb(245, 244, 244);
     padding-bottom: 12px;
 }
+#div_hader{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
 
 .center {
+    position: relative;
+    z-index: 2;
     display: flex;
     text-align: center;
     align-items: center;
@@ -20,6 +31,7 @@
 }
 
 .hader {
+    position: relative;
     background-image: url(../images/vista.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +40,7 @@
     min-height: 389px;
     color: white;
     margin-bottom: 12px;
-
+    
 }
 
 .hader h2 {
@@ -37,6 +49,8 @@
 }
 
 #nav {
+    position: relative;
+    z-index: 2;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -78,7 +92,7 @@ a {
 
 .maicon {
     display: flex;
-
+    max-width: 100%;
 }
 
 #main {
@@ -111,7 +125,8 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 300px;
     border: 1px solid white;
     box-shadow: 0px 5px 14px 14px #DEDEDE;
@@ -216,18 +231,22 @@ input {
     border-bottom: 2px solid #767676;
     border-radius: 10px;
     margin-top: 12px;
-    width: 445px;
+    width: 100%;
+    max-width: 400px;
     height: 30px;
 }
 
 form {
+    max-width: 500px;
+    width: 100%;
     text-align: start;
 
     gap: 22px;
 }
 
 .form {
-    padding: 40px 150px 40px 150px;
+    padding: 40px 50px 40px ;
+    max-width: 100%;
 }
 
 #a>a {
@@ -259,6 +278,7 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0px 27px;
 
 }
 
