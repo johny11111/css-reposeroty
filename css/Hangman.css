@@ -18,11 +18,10 @@
 #mainHAN{
     display: flex;
     flex-direction: column;
-   
+   gap: 15px;
     align-items: center;
     justify-content: center;
 }
-
 #lateer{
     padding: 12px;
     align-items: center;
@@ -33,9 +32,8 @@
     display: flex;
     gap: 12px;
 }
-.div_later{
+.squer{
     display: flex;
-    
     justify-content: center;
     align-items: center;
     text-align: center;
