@@ -25,8 +25,9 @@ function checkWin(e) {
                 
                 
             }
-            if (guesses.length > 21){
-                document.querySelector("#alert").innerHTML = "maybe next time"
+            if (guesses.length > 21){ 
+               document.querySelector("#alert").innerHTML = "maybe next time"
+                
             }
     }
 }
