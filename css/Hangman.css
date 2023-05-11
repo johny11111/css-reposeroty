@@ -44,3 +44,10 @@
     color: white;
     background: black;
 }
+#alert{
+    display: flex;
+    gap: 15px;
+    font-weight: 600;
+    font-size: 25px;
+    
+}

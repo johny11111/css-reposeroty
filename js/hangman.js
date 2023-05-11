@@ -6,18 +6,30 @@ const letters_selected = [
     "hello"
 ]
 
-let random = Math.floor(Math.random()*3)
+let random = Math.floor(Math.random() * 3)
 function checkWin(e) {
+    
     let whoClickedValue = e.target.textContent;
-        for (let i = 0; i < letters_selected[random].length; i++) {
-            if (letters_selected[random][i].includes(whoClickedValue)){
-                console.log("dh");
-                board[i] = letters_selected[random][i];
-                document.querySelector("#showSelectLeter").innerHTML = board     
-            }
+    for (let i = 0; i < letters_selected[random].length; i++) {
+        if (letters_selected[random][i].includes(whoClickedValue)) {
+            board[i] = letters_selected[random][i];
+            document.querySelector("#showSelectLeter").innerHTML = createSign(board)
         }
+        
+        
+            let toString = board.toString()
+            let split = toString.replaceAll(",","")
+            if (split === letters_selected[random]){
+                
+                document.querySelector("#alert").innerHTML = "gratitude your success"
+                
+                
+            }
+            if (guesses.length > 21){
+                document.querySelector("#alert").innerHTML = "maybe next time"
+            }
     }
-
+}
 
 
 
@@ -26,8 +38,9 @@ function checkWin(e) {
 function createSign(arr_letter) {
     arr_letter.forEach((e) =>
         document.querySelector("#showSelectLeter").innerHTML += e);
+    return arr_letter
 }
-createSign(board)
+
 
 
 
@@ -47,6 +60,7 @@ function createLetter() {
         })
         divElement = document.querySelector("#lateer").append(div)
     }
+    createSign(board)
 }
 createLetter()
 
@@ -66,3 +80,17 @@ function addSelect(arr) {
     guesses += arr + " "
     document.querySelector('#guues').innerHTML = guesses
 }
+
+// function reset(){
+document.querySelector('#reset').addEventListener('click', () => {
+    board = ["-", "-", "-", "-", "-"]
+    guesses = []
+    document.querySelector('#alert').innerHTML = ""
+    document.querySelector('#guues').innerHTML = ""
+
+    random = Math.floor(Math.random() * 3)
+    document.querySelector('#showSelectLeter').innerHTML = createSign(board)
+    counter = 0;
+
+})
+// }
