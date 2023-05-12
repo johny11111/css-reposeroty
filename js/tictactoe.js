@@ -34,7 +34,7 @@ function creeatboard(board) {
 creeatboard(9)
 
 
-document.querySelector("#textWin").style.display = "block";
+document.querySelector("#textWin").style.display = "none";
 // function te check winner
 function checkWin() {
     let bool = false;
