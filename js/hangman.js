@@ -84,7 +84,7 @@ function addSelect(arr) {
 
 // function reset(){
 document.querySelector('#reset').addEventListener('click', () => {
-    board = ["-", "-", "-", "-", "-"]
+    board = ["_", "_", "_", "_", "_"]
     toString = board.toString()
     split = toString.replaceAll(",", "")
     guesses = []
