@@ -1,5 +1,5 @@
 let guesses = "";
-let board = ["_", "_", "_", "_", "_"]
+let board = ["_ ", "_ ", "_ ", "_ ", " _"]
 let toString = board.toString()
 let split = toString.replaceAll(",", "")
 
@@ -84,7 +84,7 @@ function addSelect(arr) {
 
 // function reset(){
 document.querySelector('#reset').addEventListener('click', () => {
-    board = ["_", "_", "_", "_", "_"]
+    board = ["_ ", " _", " _", " _", " _"]
     toString = board.toString()
     split = toString.replaceAll(",", "")
     guesses = []
