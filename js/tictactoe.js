@@ -85,3 +85,7 @@ const onClick = (e, checkwi) => {
 function changePlayer() {
     currentPlayer = (currentPlayer === "x") ? "o" : "x";
   }
+
+let  reset = document.querySelector("#reset").addEventListener("click",()=>{
+    divelm.forEach(e => e.innerHTML = "")
+})
