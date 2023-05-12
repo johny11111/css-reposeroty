@@ -23,10 +23,10 @@ function checkWin(e) {
         split = toString.replaceAll(",", "")
         document.querySelector("#showSelectLeter").innerHTML = createSign(split)
         if (split === letters_selected[random]) {
-            document.querySelector("#alert").innerHTML = "gratitude your success"
+            document.querySelector("#alert").innerHTML = "Congratulations! You won!"
         }
         if (guesses.length > 21) {
-            document.querySelector("#alert").innerHTML = "maybe next time"
+            document.querySelector("#alert").innerHTML = "game over! you lost"
         }
     }
 }
