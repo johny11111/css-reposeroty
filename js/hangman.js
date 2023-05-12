@@ -24,9 +24,11 @@ function checkWin(e) {
         document.querySelector("#showSelectLeter").innerHTML = createSign(split)
         if (split === letters_selected[random]) {
             document.querySelector("#alert").innerHTML = "Congratulations! You won!"
+            document.querySelector("#lateer").style.display = "none";
         }
         if (guesses.length > 21) {
-            document.querySelector("#alert").innerHTML = "game over! you lost"
+            document.querySelector("#alert").innerHTML = "game over! you lost";
+            document.querySelector("#lateer").style.display = "none";
         }
     }
 }
@@ -36,8 +38,6 @@ function checkWin(e) {
 
 // arry for results
 function createSign(arr_letter) {
-    debugger
-
     document.querySelector("#showSelectLeter").innerHTML += arr_letter;
     return arr_letter
 }
@@ -84,6 +84,8 @@ function addSelect(arr) {
 
 // function reset(){
 document.querySelector('#reset').addEventListener('click', () => {
+  
+   
     board = ["_ ", " _", " _", " _", " _"]
     toString = board.toString()
     split = toString.replaceAll(",", "")
@@ -91,7 +93,10 @@ document.querySelector('#reset').addEventListener('click', () => {
     document.querySelector('#alert').innerHTML = ""
     document.querySelector('#guues').innerHTML = ""
     random = Math.floor(Math.random() * 3)
+    document.querySelector("#lateer").style.display = "block";
+    document.querySelector("#lateer").style.display = "flex";
     document.querySelector('#showSelectLeter').innerHTML = createSign(split)
+   
     counter = 0;
 
 })
