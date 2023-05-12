@@ -15,19 +15,14 @@ function checkWin(e) {
             board[i] = letters_selected[random][i];
             document.querySelector("#showSelectLeter").innerHTML = createSign(board)
         }
-        
-        
             let toString = board.toString()
             let split = toString.replaceAll(",","")
             if (split === letters_selected[random]){
                 
-                document.querySelector("#alert").innerHTML = "gratitude your success"
-                
-                
+             return   document.querySelector("#alert").innerHTML = "gratitude your success"    
             }
-            if (guesses.length > 21){ 
-               document.querySelector("#alert").innerHTML = "maybe next time"
-                
+            if (guesses.length > 21){
+              return document.querySelector("#alert").innerHTML = "maybe next time"     
             }
     }
 }
