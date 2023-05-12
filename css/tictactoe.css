@@ -28,10 +28,26 @@
 }
 
 #canvas {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+}
+#textWin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right:25%;
+    background: rgb(169, 144, 238);
+    bottom: 25%;
+    min-width: 50%;
+    min-height: 50%;
+    z-index: 1;
+}
+#win{
+  font-size: 40px;
 }
 
 #tictactoe {
@@ -43,16 +59,16 @@
 }
 
 .squer {
-    color: white;
+    color: rgb(21, 20, 20);
     position: relative;
     display: inline-block;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 190px;
+    align-items: end;
+    font-size: 124px;
     width: calc(100%/3);
     height: calc(100%/3);
-    background: repeating-linear-gradient(120deg, black, transparent 28px);
+    
     border: 22px solid lightgrey;
 }
 
