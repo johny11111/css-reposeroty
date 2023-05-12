@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.hader{
+
+.hader {
     position: relative;
     background-image: url(../images/vista.jpg);
     background-repeat: no-repeat;
@@ -15,14 +16,17 @@
     margin-bottom: 12px;
 
 }
-#mainHAN{
+
+#mainHAN {
     display: flex;
     flex-direction: column;
-   gap: 15px;
+    gap: 15px;
     align-items: center;
     justify-content: center;
+    padding: 30px;
 }
-#lateer{
+
+#lateer {
     padding: 12px;
     align-items: center;
     justify-content: center;
@@ -32,7 +36,8 @@
     display: flex;
     gap: 12px;
 }
-.squer{
+
+.squer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,13 +49,11 @@
     color: white;
     background: black;
 }
-#alert{
+
+#alert {
     display: flex;
     gap: 15px;
     font-weight: 600;
     font-size: 25px;
-    
-}
-#reset{
-    
+
 }
