@@ -1,5 +1,5 @@
 let guesses = "";
-let board = ["-", "-", "-", "-", "-"]
+let board = ["_", "_", "_", "_", "_"]
 let toString = board.toString()
 let split = toString.replaceAll(",", "")
 
