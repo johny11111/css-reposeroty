@@ -1,5 +1,10 @@
 let guesses = "";
 let board = ["-", "-", "-", "-", "-"]
+let toString = board.toString()
+let split = toString.replaceAll(",", "")
+
+
+
 const letters_selected = [
     "apple",
     "lemon",
@@ -8,22 +13,21 @@ const letters_selected = [
 
 let random = Math.floor(Math.random() * 3)
 function checkWin(e) {
-    
     let whoClickedValue = e.target.textContent;
     for (let i = 0; i < letters_selected[random].length; i++) {
         if (letters_selected[random][i].includes(whoClickedValue)) {
             board[i] = letters_selected[random][i];
             document.querySelector("#showSelectLeter").innerHTML = createSign(board)
         }
-            let toString = board.toString()
-            let split = toString.replaceAll(",","")
-            if (split === letters_selected[random]){
-                
-             return   document.querySelector("#alert").innerHTML = "Congratulations! You won!"    
-            }
-            if (guesses.length > 21){
-              return document.querySelector("#alert").innerHTML = "Game over! You lost!"    
-            }
+        toString = board.toString()
+        split = toString.replaceAll(",", "")
+        document.querySelector("#showSelectLeter").innerHTML = createSign(split)
+        if (split === letters_selected[random]) {
+            document.querySelector("#alert").innerHTML = "gratitude your success"
+        }
+        if (guesses.length > 21) {
+            document.querySelector("#alert").innerHTML = "maybe next time"
+        }
     }
 }
 
@@ -32,8 +36,9 @@ function checkWin(e) {
 
 // arry for results
 function createSign(arr_letter) {
-    arr_letter.forEach((e) =>
-        document.querySelector("#showSelectLeter").innerHTML += e);
+    debugger
+
+    document.querySelector("#showSelectLeter").innerHTML += arr_letter;
     return arr_letter
 }
 
@@ -56,7 +61,7 @@ function createLetter() {
         })
         divElement = document.querySelector("#lateer").append(div)
     }
-    createSign(board)
+    createSign(split)
 }
 createLetter()
 
@@ -80,12 +85,13 @@ function addSelect(arr) {
 // function reset(){
 document.querySelector('#reset').addEventListener('click', () => {
     board = ["-", "-", "-", "-", "-"]
+    toString = board.toString()
+    split = toString.replaceAll(",", "")
     guesses = []
     document.querySelector('#alert').innerHTML = ""
     document.querySelector('#guues').innerHTML = ""
-
     random = Math.floor(Math.random() * 3)
-    document.querySelector('#showSelectLeter').innerHTML = createSign(board)
+    document.querySelector('#showSelectLeter').innerHTML = createSign(split)
     counter = 0;
 
 })
