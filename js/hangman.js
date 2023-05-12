@@ -19,10 +19,10 @@ function checkWin(e) {
             let split = toString.replaceAll(",","")
             if (split === letters_selected[random]){
                 
-             return   document.querySelector("#alert").innerHTML = "gratitude your success"    
+             return   document.querySelector("#alert").innerHTML = "Congratulations! You won!"    
             }
             if (guesses.length > 21){
-              return document.querySelector("#alert").innerHTML = "maybe next time"     
+              return document.querySelector("#alert").innerHTML = "Game over! You lost!"    
             }
     }
 }
