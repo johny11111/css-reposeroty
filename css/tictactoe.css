@@ -59,7 +59,7 @@
 }
 
 .squer {
-    color: rgb(21, 20, 20);
+    color: rgb(250, 247, 247);
     position: relative;
     display: inline-block;
     display: flex;
@@ -68,10 +68,15 @@
     font-size: 124px;
     width: calc(100%/3);
     height: calc(100%/3);
+    background: rgb(56, 55, 55);
     
-    border: 22px solid lightgrey;
+    border: 2px solid lightgrey;
+}.squer:hover{
+    color: #262626;
+    transform: scale(.9);
+    background:rgb(248, 190, 84);
+    
 }
-
 @media screen and (max-width: 400px) {
     .squer {
         width: calc(100%/3);
