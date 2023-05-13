@@ -87,9 +87,16 @@
     height: auto;  
     margin-right: 233px;
 }
-
-@media screen and (max-width:400px){
-    #reset{
-        margin: 0 auto;   
+ @media screen and (max-width: 400px) {
+    .squer {
+        display: flex;
+        align-items: center;
+         font-size: 40px;
+         
     }
+}
+@media screen and (max-width:400px) {
+   #reset{
+    margin :0 auto;
+   } 
 }
