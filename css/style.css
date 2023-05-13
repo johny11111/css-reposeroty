@@ -113,8 +113,12 @@ a {
     flex-wrap: wrap;
     gap: 33px;
     max-width: 900px;
+    width: 100%;
     padding: 30px;
 
+}
+img {
+    max-width: 100%;
 }
 
 .grid {
