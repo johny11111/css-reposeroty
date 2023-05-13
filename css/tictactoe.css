@@ -83,18 +83,13 @@
     
 }
 #reset{
-    width: 300px;
+    max-width: 300px;
     height: auto;  
+    margin-right: 233px;
 }
-@media screen and (max-width: 400px) {
-    .squer {
-        width: calc(100%/3);
-        height: calc(50%/3);
-        font-size: 40px;
-    }
-}
-@media screen and (max-width: 400px) {
-    #canvas {
-     padding: 10px;
+
+@media screen and (max-width:400px){
+    #reset{
+        margin: 0 auto;   
     }
 }
